@@ -7,6 +7,7 @@ from django.http import StreamingHttpResponse
 import cv2
 import threading
 
+
 # class VideoCamera(object):
 #     def __init__(self):
 #         self.video = cv2.VideoCapture(0)
@@ -24,15 +25,15 @@ import threading
 #     def update(self):
 #         while True:
 #             (self.grabbed, self.frame) = self.video.read()
-
-
+#
+#
 # def gen(camera):
 #     while True:
 #         frame = camera.get_frame()
 #         yield(b'--frame\r\n'
 #               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
-
-
+#
+#
 # @gzip.gzip_page
 # def livefe(request):
 #     try:
@@ -59,7 +60,7 @@ def index(request):
     }
 
     # Render the HTML template index.html with the data in the context variable
-    return render(request, 'index.html', context=context)
+    return render(request, 'home.html', context=context)
 
 
 from django.views import generic
