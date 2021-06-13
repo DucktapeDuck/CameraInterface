@@ -5,6 +5,5 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     path('', views.index, name='index'),
-    # path('books/', views.BookListView.as_view(), name='books'),
-    path('camera/', views.livefe, name='livefe'),
+    path('livefeed/', views.livefeed, name='livefeed'),
 ]
