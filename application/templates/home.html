@@ -1,0 +1,27 @@
+{% extends "project_generic.html" %}
+<!-- Hero Section -->
+{% block content %}
+    <section class="hero" id="home">
+        <img class="cam_view" src="{% url 'livefeed' %}" width="500" height="600">
+        <p class="tagline">Object Detection Feed</p>
+        </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="stats_header">Statistics</h2>
+        <p class="text_column">Collected statistics of the captured instances
+        </p>
+    </section>
+    <!-- Stats Gallery Section -->
+    <div class="gallery">
+        <div class="thumbnail">
+          <h1 class="stats">{{ today }}</h1>
+          <h4>TODAY</h4>
+          <p>Captures from 12:00am today</p>
+        </div>
+        <div class="thumbnail">
+          <h1 class="stats">{{ alltime }}</h1>
+          <h4>ALL-TIME</h4>
+          <p>All captures</p>
+        </div>
+    </div>
+{% endblock %}
