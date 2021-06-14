@@ -61,16 +61,16 @@ ul li a {
 ul li:hover a {
 	color: #2C9AB7;
 }
+
+.cam_view {
+	display: block;
+	margin: 0 auto;
+}
+
 .hero_header {
 	color: #FFFFFF;
 	text-align: center;
-/*
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	letter-spacing: 4px;
-*/
+
 }
 /* Hero Section */
 .hero {
@@ -92,7 +92,6 @@ ul li:hover a {
 }
 /* About Section */
 .text_column {
-	width: 100%;
 	text-align: center;
 	font-weight: lighter;
 	line-height: 25px;
@@ -102,19 +101,29 @@ ul li:hover a {
 	color: #A3A3A3;
 }
 .about {
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 5px;
 	display: inline-block;
 	background-color: #FFFFFF;
 	margin-top: 0px;
 }
+.stats_header {
+	text-align: center;
+	font-weight: lighter;
+	line-height: 25px;
+	float: top;
+	padding-left: 70px;
+	padding-right: 70px;
+	color: #313131;
+}
+
 /* Stats Gallery */
 .stats {
 	color: #717070;
 	margin-bottom: 5px;
 }
+
 .gallery {
 	clear: both;
 	display: inline-block;
@@ -258,9 +267,9 @@ footer .footer_column p {
 footer {
 	display: inline-block;
 }
-.hidden {
-	display: none;
-}
+/*.hidden {*/
+/*	display: none;*/
+/*}*/
 
 /* Mobile */
 @media (max-width: 320px) {
@@ -385,8 +394,7 @@ nav ul li {
 	padding-bottom: 8px;
 }
 .text_column {
-	width: 100%;
-	text-align: left;
+	text-align: center;
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 0px;
